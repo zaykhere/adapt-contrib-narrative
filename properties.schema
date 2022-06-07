@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "Slide show. Select the next button to progress.",
+      "default": "Diapositivas. Seleccione el siguiente botón para avanzar.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -41,65 +41,66 @@
       "type": "string",
       "required": false,
       "default": "",
+      "title": "Instrucción",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instruction text",
+      "help": "Este es el texto de instrucciones.",
       "translatable": true
     },
     "mobileInstruction": {
       "type": "string",
       "required": false,
       "default": "",
-      "title": "Mobile Instruction",
+      "title": "Instrucción móvil",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the mobile only instruction text",
+      "help": "Este es el texto de instrucciones solo para dispositivos móviles",
       "translatable": true
     },
     "_isTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image",
+      "title": "Mover área de texto debajo de la imagen",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the text area drops below the image instead of being aside it"
+      "help": "Si está habilitado, el área de texto cae debajo de la imagen en lugar de estar a un lado."
     },
     "_isMobileTextBelowImage": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move text area below image on mobile",
+      "title": "Mover el área de texto debajo de la imagen en el móvil",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, on mobile, the text area drops below the image instead of being behind the strapline button"
+      "help": "Si está habilitado, en dispositivos móviles, el área de texto cae debajo de la imagen en lugar de estar detrás del botón de línea principal"
     },
     "_hasNavigationInTextArea": {
       "type": "boolean",
       "required": true,
       "default": false,
-      "title": "Move navigation to text area",
+      "title": "Mover la navegación al área de texto",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, all navigation elements will be moved to the text area"
+      "help": "Si está habilitado, todos los elementos de navegación se moverán al área de texto"
     },
     "_setCompletionOn": {
       "type": "string",
       "required": true,
       "enum": ["inview", "allItems"],
       "default": "allItems",
-      "title": "Set completion on",
+      "title": "Establecer finalización en",
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": ["required"],
-      "help": "Whether completion is based on the learner having viewed all the narrative items - or just having viewed the component"
+      "help": "Si la finalización se basa en que el alumno haya visto todos los elementos narrativos, o simplemente en haber visto el componente."
     },
     "_items": {
       "type": "array",
       "required": false,
-      "title": "Narrative items",
+      "title": "Elementos narrativos",
       "items": {
         "type": "object",
         "required": false,
@@ -108,7 +109,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative display title",
+            "title": "Título de visualización narrativo",
             "inputType": "Text",
             "validators": [],
             "help": "",
@@ -118,7 +119,7 @@
             "type": "number",
             "required": true,
             "default": 0,
-            "title": "Narrative title level",
+            "title": "Nivel de título narrativo",
             "inputType": "Number",
             "validators": ["required", "number"],
             "help": "Aria level for title"
@@ -127,7 +128,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Narrative main text",
+            "title": "Texto principal narrativo",
             "inputType": "TextArea",
             "validators": [],
             "help": "",
@@ -135,13 +136,13 @@
           },
           "_graphic": {
             "type": "object",
-            "title": "Narrative graphic",
+            "title": "Gráfica narrativa",
             "properties": {
               "src": {
                 "type": "string",
                 "required": true,
                 "default": "",
-                "title": "Select Graphic",
+                "title": "Seleccionar gráfico",
                 "inputType": "Asset:image",
                 "validators": ["required"],
                 "help": ""
@@ -150,19 +151,20 @@
                 "type": "string",
                 "required": false,
                 "default": "",
-                "title": "Alternative Text",
+                "title": "Texto alternativo",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "Una descripción de la imagen; requerido cuando tiene un significado que debe transmitirse al alumno. Para imágenes 'decorativas', déjelo en blanco.",
                 "translatable": true
               },
               "attribution": {
                 "type": "string",
                 "required": false,
                 "default": "",
+                "title": "Atribución",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Texto que se mostrará como una atribución",
                 "translatable": true
               }
             }
@@ -171,7 +173,7 @@
             "type": "string",
             "required": true,
             "default": "",
-            "title": "Narrative strapline",
+            "title": "Eslogan narrativo",
             "inputType": "Text",
             "validators": ["required"],
             "help": "",

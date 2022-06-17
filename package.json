@@ -7,7 +7,7 @@
   "component" : "narrative",
   "targetAttribute": "_narrative",
   "displayName" : "Narrative",
-  "description": "A component that displays an image gallery with accompanying text",
+  "description": "Un componente que muestra una galería de imágenes con texto adjunto",
   "main": "/js/adapt-contrib-narrative.js",
   "keywords": [
     "adapt-plugin",
